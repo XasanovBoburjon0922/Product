@@ -1,11 +1,89 @@
+:root{
+    --bg-header:white;
+    --color-icon:black;
+    --navbar-color:#837D88;
+    --modal-bg:#2C2830;
+}
+
+.mode{
+    --bg-header:black;
+    --color-icon:white;
+    --navbar-color:white;
+    --modal-bg:#e4e1ea;
+}
+
 .site-header{
-
+    background-color:var(--bg-header) ;
+    padding: 19px;
 }
-
 .header{
-    
+    @include display()
 }
-.title{
-    color: red;
-    font-size: 40px;
+.header__navbar{
+    @include display($space:start);
+    gap: 28px;
+}
+.header__nav{
+    @include display();
+    gap: 24px;
+}
+.header__logo-link{
+    color: var(--color-icon);
+}
+.navbar__list{
+    @include display($space:start);
+    gap: 20px;
+}
+.navbar__link{
+    @include textStyle();
+    color: var(--color-icon);
+    &:hover{
+        @include textStyle($fontWeight:600)
+    }
+}
+.view-plans{
+    color: var(--color-icon);
+    border-color: var(--color-icon);
+}
+.contact{
+    @include display($space:start);
+    gap: 24px;
+}
+.contact__sign-in{
+   @include button($width:102px,$colorBg:transparent);
+   border: 1px solid #BCD0E5;
+   color: #173A56;
+}
+.contact__sign-up{
+    @include button();
+}
+.header__contact-icon{
+    border: none;
+    background: transparent;
+}
+#modeBtn{
+    color: var(--color-icon);
+    border-color: var(--color-icon);
+}
+.hamburger-btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+.header-element{
+    @include display($space:start);
+    gap: 20px;
+}
+@media (max-width:930px){
+    .header__nav{
+        display: none;
+    }
+    .hamburger-btn{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    .header-element{
+        gap: 2px;
+    }
 }

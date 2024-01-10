@@ -1,0 +1,39 @@
+.customer{
+    @include display()
+}
+.management__wrapper-content{
+    @include display($space:start, $items:start);
+    gap: 30px;
+}
+.management__wrapper-box{
+    max-width: 367.43px;
+}
+.customer-img{
+    max-width:543px; 
+    height: auto;
+}
+@media (max-width:870px){
+    .customer-section{
+        margin-top: 20px;
+    }
+    .customer{
+        @include display($direction:column)
+    }
+    .management__wrapper{
+        max-width: 100%;
+    }
+    .customer-img{
+        max-width:100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:570px){
+    .customer-section{
+        margin-top: 30px;
+    }
+}
+@media (max-width:340px){
+    .customer-section{
+        margin-top: 0;
+    }
+}

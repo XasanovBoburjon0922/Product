@@ -1,0 +1,52 @@
+.business__content{
+    margin: 157px 64px 150px 78px;
+}
+.business__wrapper {
+    border-radius: 32px;
+    background: #02897A;
+    padding: 10px 26px 10px 51px;
+    @include display($items:start);
+
+}
+.business__wrapper-box {
+    max-width: 510px;
+    margin-top: 39px;
+}
+.business__wrapper-box-title {
+    @include textStyle($fontSize:32px, $fontWeight:600, $lineHeight:48.5px, $color:#fff)
+}
+.business__wrapper-box-button {
+    @include display($space:start,$items:start);
+   
+}
+.business__wrapper-box-button-link {
+    display: inline-block;
+    @include button($width:150px,$colorBg:#fff);
+    margin-top: 60px;
+    margin-bottom: 56px;
+    border-radius: 8px;
+    @include textStyle($color:#02897A, $fontSize:20px, $fontWeight:600, $lineHeight:normal);
+}
+
+@media (max-width:1000px) {
+    .business__content{
+        margin: 157px 0 150px 0;
+    }
+}
+@media (max-width:862px){
+    .business__wrapper {
+        @include display($items:center, $space:center, $direction:column);
+        padding: 0;
+    }
+    .business__wrapper-box-button {
+        @include display($space:center,$items:start);
+       
+    }
+    .business-img{
+        width: 100%;
+        height: auto;
+    }
+    .business__wrapper-box-title {
+        text-align: center;
+    }
+}

@@ -4,15 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Your site name</title>
+    <title>Product</title>
 </head>
 <body>  
+
     <!-- Site Header start -->
     <header class="site-header">
         <div class="container">
             <div class="header">
-                
-            </div>
+                <a href="/" class="header__logo-img">
+                    <img src="./images/header-logo.svg" alt="Site logo" class="header__logo-img">
+                </a>
+                <div class="header__navbar">
+                    <nav class="header__nav">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Product</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Customers</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Pricing</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Resources</a>
+                            </li>
+                        </ul>
+                        <div class="header__contacts contact">
+                            <a class="contact__sign-in" href="#">Sign In</a>
+                            <a class="contact__sign-up" href="#">Sign Up</a>
+                        </div>
+                    </nav>
+                    <div class="header-element">
+                        <div class="header__contact-icon">
+                            <button id="modeBtn" class="header__contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22ZM12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4Z" fill="#02897A"/>
+                                    <path d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z" fill="#02897A"/>
+                                </svg>
+                            </button>
+                            <!-- <button class="md:hidden menu-btn open">
+                                <img src="./images/burder-img.svg" alt="Burder btn" width="32" height="32">
+                            </button>
+                            <button class="md:hidden close">
+                                <img src="./images/remove-menu-icon.svg" alt="Burder btn" width="32" height="32">
+                            </button> -->
+                        </div>
+                        <div class="hamburger-btn">
+                            <img class="hamburger-img" src="./images/hamburger.svg" alt="" width="28" height="31">
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
     </header>
     <!-- Site Header end -->
@@ -22,7 +66,336 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
-
+                    <div class="hero__wrapper">
+                        <div class="hero__wrapper-title-item">
+                            <h2 class="hero__wrapper-title">Work at the speed of thought</h2>
+                        </div>
+                        <div class="hero__wrapper-text-item">
+                            <p class="hero__wrapper-text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                        </div>
+                        <div class="hero__wrapper-button-content">
+                            <a class="hero__wrapper-button" href="#">Get started</a>
+                            <div class="hero__wrapper-content">
+                                <img src="images/hero-icon.svg" alt="uchburchakcha" width="20" height="17">
+                                <p class="hero__wrapper-content-text">Watch the Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="hero-img" src="./images/amico.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="built-section">
+            <div class="container">
+                <div class="built">
+                    <div class="built__wrapper">
+                        <h3 class="built__wrapper-title">Product  was Built Specifically for You</h3>
+                    </div>
+                    <div class="built__content">
+                        <div class="built__content-box">
+                            <img src="./images/built-icon1.svg" alt="" width="50" height="50">
+                            <ul class="built__content-list">
+                                <li class="built__content-item-text">First click tests</li>
+                                <li class="built__content-item">While most people enjoy casino gambling,</li>
+                            </ul>
+                        </div>
+                        <div class="built__content-box">
+                            <img src="./images/built-icon2.svg" alt="" width="50" height="50">
+                            <ul class="built__content-list">
+                                <li class="built__content-item-text">Design surveys</li>
+                                <li class="built__content-item">Sports betting, lottery and bingo playing for the fun</li>
+                            </ul>
+                        </div>
+                        <div class="built__content-box">
+                            <img src="./images/built-icon3.svg" alt="" width="50" height="50">
+                            <ul class="built__content-list">
+                                <li class="built__content-item-text">Preference tests</li>
+                                <li class="built__content-item">The Myspace page defines the individual.</li>
+                            </ul>
+                        </div>
+                        <div class="built__content-box">
+                            <img src="./images/built-icon4.svg" alt="" width="50" height="50">
+                            <ul class="built__content-list">
+                                <li class="built__content-item-text">Five second tests</li>
+                                <li class="built__content-item">Personal choices and the overall personality of the person. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="built__button-link">
+                        <a class="built__button" href="#">SIGN UP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="management-section">
+            <div class="container">
+                <div class="management">
+                    <div class="management__wrapper">
+                        <span class="management__wrapper-item">Effortless Validation for</span>
+                        <h3 class="management__wrapper-title">Management</h3>
+                        <p class="management__wrapper-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
+                        <strong class="management__wrapper-text-item">Accessory makers</strong>
+                        <p class="management__wrapper-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun </p>
+                        <strong class="management__wrapper-text-item">Alterationists</strong>
+                        <p class="management__wrapper-text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                    </div>
+                    <img class="management-img" src="images/management-img.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="customer-section">
+            <div class="container">
+                <div class="customer">
+                    <img class="customer-img" src="./images/customer-img.svg" alt="">
+                    <div class="management__wrapper">
+                        <span class="management__wrapper-item">Easier decision making for</span>
+                        <h3 class="management__wrapper-title">Customer Support</h3>
+                        <p class="management__wrapper-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
+                        <div class="management__wrapper-content">
+                            <img src="./images/customer-icon1.svg" alt="" width="35" height="35">
+                            <div class="management__wrapper-box">
+                            <p class="management__wrapper-text">Never worry about overpaying for your energy again. </p>
+                            </div>
+                        </div>
+                        <div class="management__wrapper-content">
+                            <img src="./images/customer-icon2.svg" alt="" width="35" height="35">
+                            <div class="management__wrapper-box">
+                            <p class="management__wrapper-text">We will only switch you to energy companies that we trust and will treat you right</p>
+                            </div>
+                        </div>
+                        <div class="management__wrapper-content">
+                            <img src="./images/customer-icon3.svg" alt="" width="35" height="35">
+                            <div class="management__wrapper-box">
+                                <p class="management__wrapper-text">We track the markets daily and know where the savings are.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collaborative-section">
+            <div class="container">
+                <div class="collaborative">
+                    <div class="collaborative__wrapper">
+                        <span class="collaborative__wrapper-item">Optimisation for</span>
+                        <h3 class="collaborative__wrapper-title">Collaborative</h3>
+                        <p class="collaborative__wrapper-text">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </p>
+                        <strong class="collaborative__wrapper-text-item">Accessory makers</strong>
+                        <p class="collaborative__wrapper-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+                        <strong class="collaborative__wrapper-text-item">Alterationists</strong>
+                        <p class="collaborative__wrapper-text">If you are looking for a new way to promote your business that won’t cost you more money,  </p>
+                    </div>
+                    <img class="collaborative-img" src="images/collaborative-img.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="process-section">
+            <div class="container">
+                <div class="process">
+                    <div class="process__wrapper">
+                        <h3 class="process__wrapper-title">Quick & Easy Process</h3>
+                        <div class="process__wrapper-box">
+                            <p class="process__wrapper-text">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?</p>
+                        </div>
+                    </div>
+                    <div class="process__wrap">
+                        <div class="process__content">
+                            <div class="process__content-box">
+                                <img class="process__content-box-img" src="./images/Avator1.svg" alt="Avatar logo1" width="98" height="98">
+                                <p class="process__content-box-text">I can take care of your pitch</p>
+                            </div>
+                            <div class="process__content-box">
+                                <p class="process__content-box-text">I can design you website</p>
+                                <img class="process__content-box-img" src="./images/Avator3.svg" alt="Avatar logo1" width="98" height="98">
+                            </div>
+                        </div>
+                        <div class="process__content">
+                            <div class="process__content-box">
+                                <p class="process__content-box-text">I can prototype your app</p>
+                                <img class="process__content-box-img" src="./images/Avator2.svg" alt="Avatar logo1" width="98" height="98">
+                            </div>
+                            <div class="process__content-box">
+                                <img class="process__content-box-img" src="./images/Avator4.svg" alt="Avatar logo1" width="98" height="98">
+                                <p class="process__content-box-text">I can help marketing strategy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__button-link">
+                        <a class="process__button" href="#">Contact our expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contents-section">
+            <div class="container">
+                <div class="contents">
+                    <div class="contents-wrapper">
+                        <h3 class="contents-wrapper-title">Contents Strategies</h3>
+                        <p class="contents-wrapper-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away. </p>
+                    </div>
+                    <div class="contents-wrap">
+                        <div class="contents-box">
+                            <img class="contents-box-img" src="./images/contents-img1.png" alt="contents img">
+                            <div class="contents-box-pad">
+                                <span class="contents-box-text">By <b class="contents-box-text-bold">Wahid Ari</b> |  03 March 2019</span>
+                                <p class="contents-box-item">Increasing Prosperity With Positive Thinking</p>
+                            </div>
+                        </div>
+                        <div class="contents-box">
+                            <img class="contents-box-img" src="./images/contents-img2.png" alt="contents img">
+                            <div class="contents-box-pad">
+                                <span class="contents-box-text">By <b class="contents-box-text-bold">Wahid Ari</b> |  03 March 2019</span>
+                                <p class="contents-box-item">Motivation Is The First Step To Success</p>
+                            </div>
+                        </div>
+                        <div class="contents-box">
+                            <img class="contents-box-img" src="./images/contents-img3.png" alt="contents img">
+                            <div class="contents-box-pad">
+                                <span class="contents-box-text">By <b class="contents-box-text-bold">Wahid Ari</b> |  03 March 2019</span>
+                                <p class="contents-box-item">Success Steps For Your Personal Or Business</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-icon">
+                        <img src="./images/contents-icon.svg" alt="contents icon" width="68" height="16">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-section">
+            <div class="container">
+                <div class="table">
+                    <div class="table__wrapper">
+                        <h3 class="table__wrapper-title">Price Table</h3>
+                        <p class="table__wrapper-text">We offer competitive price</p>
+                    </div>
+                    <div class="table__content">
+                        <div class="table__content-box">
+                            <h5 class="table__content-box-title">Free</h5>
+                            <p class="table__content-box-text">Brief price description</p>
+                            <div class="table-line">
+                                <div class="table-line-wrap">
+                                    <span class="table-line-text1">0</span>
+                                    <div class="table-line-span">
+                                        <span class="table-line-text2">$</span>
+                                        <p class="table-line-text">Per / month</p>
+                                    </div>
+                                </div>
+                                <ul class="table__content-list">
+                                    <li class="table__content-item">Only 2 Operators</li>
+                                    <li class="table__content-item">Notifications</li>
+                                    <li class="table__content-item">Landing Pages</li>
+                                </ul>
+                                <div class="table__content-button">
+                                    <a class="table__content-button-link" href="#">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__content-box">
+                            <h5 class="table__content-box-title">Standard</h5>
+                            <p class="table__content-box-text">Brief price description</p>
+                            <div class="table-line">
+                                <div class="table-line-wrap">
+                                    <span class="table-line-text1">5</span>
+                                    <div class="table-line-span">
+                                        <span class="table-line-text2">$</span>
+                                        <p class="table-line-text">Per / month</p>
+                                    </div>
+                                </div>
+                                <ul class="table__content-list">
+                                    <li class="table__content-item">Only 2 Operators</li>
+                                    <li class="table__content-item">Notifications</li>
+                                    <li class="table__content-item">Landing Pages</li>
+                                </ul>
+                                <div class="table__content-button">
+                                    <a class="table__content-button-link" href="#">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__content-box">
+                            <h5 class="table__content-box-title">Premium</h5>
+                            <p class="table__content-box-text">Brief price description</p>
+                            <div class="table-line">
+                                <div class="table-line-wrap">
+                                    <span class="table-line-text1">10</span>
+                                    <div class="table-line-span">
+                                        <span class="table-line-text2">$</span>
+                                        <p class="table-line-text">Per / month</p>
+                                    </div>
+                                </div>
+                                <ul class="table__content-list">
+                                    <li class="table__content-item">Only 2 Operators</li>
+                                    <li class="table__content-item">Notifications</li>
+                                    <li class="table__content-item">Landing Pages</li>
+                                </ul>
+                                <div class="table__content-button">
+                                    <a class="table__content-button-link" href="#">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients-section">
+            <div class="container">
+                <div class="clients__wrapper">
+                    <div class="clients__wrap">
+                        <h3 class="clients__wrapper-title">What Clients Say</h3>
+                        <div class="clients__wrapper-text-wrap">
+                            <p class="clients__wrapper-text">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                        </div>
+                    </div>
+                    <div class="clients__content">
+                        <div class="clients__content-box">
+                            <img src="./images/star-logo.svg" alt="" width="106" height="34">
+                            <p class="clients__content-box-text">Product helps you see how many more days you need to work to reach your financial goal.</p>
+                            <div class="client__content-wrap">
+                                <img src="./images/clients-avatar1.svg" alt="" width="50" height="50">
+                                <div class="client__content-wrap-text">
+                                    <span class="client__content-wrap-title">Wahid Ari</span>
+                                    <p class="client__content-wrap-text-item">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__content-box">
+                            <img src="./images/star-logo.svg" alt="" width="106" height="34">
+                            <p class="clients__content-box-text">Product helps you see how many more days you need to work to reach your financial goal.</p>
+                            <div class="client__content-wrap">
+                                <img src="./images/clients-avatar2.svg" alt="" width="50" height="50">
+                                <div class="client__content-wrap-text">
+                                    <span class="client__content-wrap-title">Wahid Ari</span>
+                                    <p class="client__content-wrap-text-item">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__content-box">
+                            <img src="./images/star-logo.svg" alt="" width="106" height="34">
+                            <p class="clients__content-box-text">Product helps you see how many more days you need to work to reach your financial goal.</p>
+                            <div class="client__content-wrap">
+                                <img src="./images/clients-avatar3.svg" alt="" width="50" height="50">
+                                <div class="client__content-wrap-text">
+                                    <span class="client__content-wrap-title">Wahid Ari</span>
+                                    <p class="client__content-wrap-text-item">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="business-section">
+            <div class="container">
+                <div class="business__content">
+                    <div class="business__wrapper">
+                        <div class="business__wrapper-box">
+                            <h4 class="business__wrapper-box-title">Join 100 Compannies who boost their business with Product</h4>
+                            <div class="business__wrapper-box-button">
+                                <a class="business__wrapper-box-button-link" href="#">Get This</a>
+                            </div>
+                        </div>
+                        <img class="business-img" src="./images/business-svg.svg" alt="screen img">
+                    </div>
                 </div>
             </div>
         </section>
@@ -30,13 +403,53 @@
     <!-- Site Main end -->
 
     <!-- Footer start -->
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
         <div class="container">
             <div class="footer">
-
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-content">
+                        <img src="./images/footer-logo.svg" alt="" width="163" height="29">
+                        <div class="footer__wrapper-content-logo">
+                            <img src="./images/instagram.svg" alt="instagram" width="40" height="40">
+                            <img src="./images/facebook.svg" alt="facebook" width="40" height="40">
+                            <img src="./images/twitter.svg" alt="twitter" width="40" height="40">
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-resource">
+                        <ul class="footer__wrapper-resource-list">
+                            <li class="footer__wrapper-resource-title">Resource</li>
+                            <li class="footer__wrapper-resource-item">About Us</li>
+                            <li class="footer__wrapper-resource-item">Blog</li>
+                            <li class="footer__wrapper-resource-item">Contact</li>
+                            <li class="footer__wrapper-resource-item">FAQ</li>
+                        </ul>
+                    </div>
+                    <div class="footer__wrapper-resource">
+                        <ul class="footer__wrapper-resource-list">
+                            <li class="footer__wrapper-resource-title">Legal Stuff</li>
+                            <li class="footer__wrapper-resource-item">Disclaimer</li>
+                            <li class="footer__wrapper-resource-item">Financing</li>
+                            <li class="footer__wrapper-resource-item">Privacy Policy</li>
+                            <li class="footer__wrapper-resource-item">Terms of Service</li>
+                        </ul>
+                    </div>
+                    <div class="footer__wrapper-form">
+                        <form action="" method="post">
+                            <p>knowing you're always on the best energy deal.</p>
+                            <label for="">
+                                <input required name="" autocomplete="" type="email" placeholder=" ">
+                            </label>
+                            <div class="footer__wrapper-button">
+                                <a class="footer__wrapper-button-link" href="#">Sign up Now</a>
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+                <p>Made With Love By Figmaland All Right Reserved </p>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- Footer end -->
 </body>
+<script src="./js/app.js"></script>
 </html>

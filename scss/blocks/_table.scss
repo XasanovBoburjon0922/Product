@@ -1,0 +1,86 @@
+.table-section{
+    margin-bottom: 150px;
+}
+.table__wrapper{
+    @include display($direction:column, $space:center)
+}
+.table__wrapper-title{
+    @include textStyle($fontSize:34px, $fontWeight:700, $lineHeight:normal);
+    margin-bottom: 8px;
+}
+.table__wrapper-text{
+    @include textStyle($fontWeight:500, $lineHeight:normal);
+    margin-bottom: 50px;
+}
+.table__content-list{
+    @include display($direction:column);
+    gap: 16px;
+    margin-bottom: 38px;
+}
+.table__content {
+    @include display()
+}
+.table-line-wrap{
+    @include display()
+}
+.table-line-span{
+    @include display($space:start, $direction:column, $items:start);
+    margin-left: 8px;
+}
+.table__content-box {
+    width: 333px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    @include display($direction:column)
+}
+.table__content-box-title {
+    @include textStyle($fontSize:24px, $fontWeight:700, $lineHeight:40px)
+}
+.table__content-box-text {
+    @include textStyle($lineHeight:40px)
+}
+.table-line {
+    @include display($direction:column)
+}
+.table-line-text1 {
+    @include textStyle($color:#02897A, $fontSize:76px, $fontWeight:700, $lineHeight:100px);
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.table-line-text2 {
+    @include textStyle($color:#02897A, $fontSize:24px, $lineHeight:30px, $fontWeight:700);
+    letter-spacing: 0.1px;
+    font-family: Inter;
+}
+.table-line-text {
+    @include textStyle($lineHeight:19px, $color:#AFAFAF);
+    letter-spacing: 0.1px;
+}
+.table__content-item {
+    @include textStyle($fontWeight:500,$lineHeight:22px);
+    font-family: Inter;
+    letter-spacing: 0.2px;
+}
+.table__content-button {
+    @include display($space:center,$items:center)
+}
+.table__content-button-link{
+    display: inline-block;
+    @include button($width:139px);
+    @include textStyle($fontWeight:600, $fontSize:18px, $lineHeight:normal, $color:#FFF);
+    font-family: Montserrat;
+}
+@media (max-width:955px){
+    .table__content {
+        @include display($direction:column);
+        gap: 32px;
+    }
+}
+@media (max-width:400px){
+    .table__content-box {
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+.clients__wrap{
+    @include display($direction:column, $space:center)
+}
+.clients__wrapper-title {
+    @include textStyle($fontSize:34px, $fontWeight:700, $lineHeight:57px);
+    letter-spacing: 0.2px;
+}
+.clients__wrapper-text-wrap {
+    max-width: 537px;
+}
+.clients__wrapper-text {
+    @include textStyle($fontWeight:500);
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.clients__content {
+    @include display();
+}
+.clients__content-box {
+    max-width: 327px;
+    padding: 28px 26px 23.65px 26px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+}
+.clients__content-box-text {
+    @include textStyle($color:#737373);
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+}
+.client__content-wrap {
+    @include display($space:start);
+    gap: 14px;
+}
+.client__content-wrap-title {
+    @include textStyle($fontWeight:600, $lineHeight:24px, $color:#02897A);
+    letter-spacing: 0.2px;
+}
+.client__content-wrap-text-item {
+    @include textStyle($color:#252B42, $fontSize:14px, $fontWeight:500, $lineHeight:24px);
+    letter-spacing: 0.2px;
+}
+@media (max-width:865px){
+    .clients__content{
+        @include display($direction:column);
+        margin-top: 32px;
+        gap: 32px;
+    }
+}
