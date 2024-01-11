@@ -43,9 +43,25 @@
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
         color: var(--color-icon);
     }
-    // &:hover > .table__content-box-title, .table__content-box-text, .table-line-text1, .table-line-text2, .table__content-item{
-    //     color: #FFF;
-    // }
+}
+.table__content-box:hover > .table-line > .table-line-wrap > .table-line-text1{
+    color: #FFF;
+}
+.table__content-box:hover > .table-line > .table-line-wrap > .table-line-span > .table-line-text2{
+    color: #FFF;
+}
+.table__content-box:hover > .table-line > .table__content-list > .table__content-item{
+    color: #FFF;
+}
+.table__content-box:hover > .table__content-box-title{
+    color: #FFF;
+}
+.table__content-box:hover > .table__content-box-text{
+    color: #FFF;
+}
+.table__content-box:hover > .table-line > .table__content-button > .table__content-button-link{
+    @include button($colorBg:#fff, $width:139px);
+    color: #02897A;
 }
 .table__content-box-title {
     @include textStyle($fontSize:24px, $fontWeight:700, $lineHeight:40px)

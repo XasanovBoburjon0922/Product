@@ -45,10 +45,19 @@ body{
 }
 
 .site-header{
-    padding: 19px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: var(--bg-header);
 }
 .header__logo-link{
     color: var(--color-icon);
+    &:hover{
+        opacity: 0.8;
+    }
 }
 .header__contact-icon-button{
     border: none;
@@ -95,7 +104,7 @@ body{
    @include button($width:102px,$colorBg:transparent);
    border: 1px solid #BCD0E5;
    color: var(--color-icon);
-   background-color: #FFF;
+   background-color: var(--bg-header);
    &:hover{
     @include button($width:102px);
     border: 1px solid #02897A;
@@ -104,6 +113,7 @@ body{
 }
 .contact__sign-up{
     @include button();
+    color: var(--color-icon);
     &:hover{
         @include button();
         color: #02897A;

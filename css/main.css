@@ -444,11 +444,20 @@ body {
 }
 
 .site-header {
-  padding: 19px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: var(--bg-header);
 }
 
 .header__logo-link {
   color: var(--color-icon);
+}
+.header__logo-link:hover {
+  opacity: 0.8;
 }
 
 .header__contact-icon-button {
@@ -537,7 +546,7 @@ body {
   border-radius: 4px;
   border: 1px solid #BCD0E5;
   color: var(--color-icon);
-  background-color: #FFF;
+  background-color: var(--bg-header);
 }
 .contact__sign-in:hover {
   color: #fff;
@@ -565,6 +574,7 @@ body {
   background-color: #02897A;
   text-align: center;
   border-radius: 4px;
+  color: var(--color-icon);
 }
 .contact__sign-up:hover {
   color: #fff;
@@ -629,7 +639,6 @@ body {
 }
 
 .hero {
-  padding-top: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1232,6 +1241,10 @@ body {
   line-height: normal;
   color: var(--color-icon);
   color: #2F281E;
+  border-radius: 26.5px;
+  padding: 15px 25px;
+  background: #FFF;
+  box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
 }
 
 .process__button-link {
@@ -1482,6 +1495,40 @@ body {
   background: #02897A;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   color: var(--color-icon);
+}
+
+.table__content-box:hover > .table-line > .table-line-wrap > .table-line-text1 {
+  color: #FFF;
+}
+
+.table__content-box:hover > .table-line > .table-line-wrap > .table-line-span > .table-line-text2 {
+  color: #FFF;
+}
+
+.table__content-box:hover > .table-line > .table__content-list > .table__content-item {
+  color: #FFF;
+}
+
+.table__content-box:hover > .table__content-box-title {
+  color: #FFF;
+}
+
+.table__content-box:hover > .table__content-box-text {
+  color: #FFF;
+}
+
+.table__content-box:hover > .table-line > .table__content-button > .table__content-button-link {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 0;
+  width: 139px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  color: #02897A;
 }
 
 .table__content-box-title {
@@ -1856,6 +1903,7 @@ body {
 }
 
 .form-input {
+  width: 100%;
   display: inline-block;
   border: none;
   color: #BCD0E5;
@@ -1902,6 +1950,8 @@ body {
   font-weight: 700;
   line-height: normal;
   text-align: center;
+  border: none;
+  background: transparent;
 }
 
 .footer-end {

@@ -10,11 +10,11 @@ elModeBtn.addEventListener("click", function(){
 elHamburgerBtn.addEventListener("click", function() {
     elModal.classList.toggle("show-modal");
     elHamburgerBtn.classList.toggle("remove-self")
-    elHamburgerClose.classList.toggle("open-close")
+    elHamburgerClose.classList.toggle("open")
 })
 
 elHamburgerClose.addEventListener("click", function() {
     elModal.classList.toggle("show-modal");
     elHamburgerBtn.classList.toggle("remove-self")
-    elHamburgerClose.classList.toggle("open-close")
+    elHamburgerClose.classList.toggle("close")
 })

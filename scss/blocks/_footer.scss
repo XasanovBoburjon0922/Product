@@ -39,6 +39,7 @@
     background-color: #FFF;
 }
 .form-input{
+    width: 100%;
     display: inline-block;
     border: none;
     @include textStyle($color:#BCD0E5);
@@ -57,6 +58,8 @@
 .footer__wrapper-button-link {
     @include textStyle($fontWeight:700, $lineHeight:normal, $color:#FFF);
     text-align: center;
+    border: none;
+    background: transparent;
 }
 .footer-end {
     margin-top: 16px;
