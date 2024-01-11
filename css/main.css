@@ -414,8 +414,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 20px;
-  gap: 10px;
 }
 
 .show-modal {

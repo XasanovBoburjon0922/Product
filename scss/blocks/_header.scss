@@ -23,8 +23,8 @@ body{
     background-color: var(--modal-bg);
     color: var(--bg-header);
     @include display($direction:column, $space:center, $items:center);
-    padding-top: 20px;
-    gap: 10px;
+    // padding-top: 20px;
+    // gap: 10px;
 }
 .show-modal{
     transform: translateX(0);
