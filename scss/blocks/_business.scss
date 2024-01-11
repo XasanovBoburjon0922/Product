@@ -26,6 +26,11 @@
     margin-bottom: 56px;
     border-radius: 8px;
     @include textStyle($color:#02897A, $fontSize:20px, $fontWeight:600, $lineHeight:normal);
+    &:hover{
+        @include button($width:150px);
+        color: #fff;
+        border: 1px solid #BCD0E5;
+    }
 }
 
 @media (max-width:1000px) {
@@ -40,7 +45,6 @@
     }
     .business__wrapper-box-button {
         @include display($space:center,$items:start);
-       
     }
     .business-img{
         width: 100%;

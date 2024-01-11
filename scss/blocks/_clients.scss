@@ -3,6 +3,7 @@
 }
 .clients__wrapper-title {
     @include textStyle($fontSize:34px, $fontWeight:700, $lineHeight:57px);
+    color: var(--color-icon);
     letter-spacing: 0.2px;
 }
 .clients__wrapper-text-wrap {
@@ -10,15 +11,18 @@
 }
 .clients__wrapper-text {
     @include textStyle($fontWeight:500);
+    color: var(--color-icon);
     letter-spacing: 0.2px;
     text-align: center;
 }
 .clients__content {
+    margin-top: 50px;
     @include display();
 }
 .clients__content-box {
     max-width: 327px;
     padding: 28px 26px 23.65px 26px;
+    background-color: #FFF;
     border-radius: 5px;
     border: 1px solid #DEDEDE;
 }
@@ -33,6 +37,7 @@
 }
 .client__content-wrap-title {
     @include textStyle($fontWeight:600, $lineHeight:24px, $color:#02897A);
+    color: #02897A;
     letter-spacing: 0.2px;
 }
 .client__content-wrap-text-item {

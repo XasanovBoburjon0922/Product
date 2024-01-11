@@ -1,4 +1,99 @@
-
-
-.site-footer{}
-.footer{}
+.footer__wrapper{
+    @include display($items:start);
+}
+.footer__wrapper-content {
+    @include display($direction:column,$space:start,$items:start);
+    gap: 24px;
+}
+.footer__wrapper-content-logo {
+    @include display($space:start, $items:start);
+    gap: 16px;
+}
+.footer__wrapper-resource-list {
+    @include display($direction:column,$space:start,$items:start);
+    gap: 10px;
+}
+.footer__wrapper-resource-title {
+    @include textStyle($fontSize:28px, $fontWeight:500, $lineHeight:30px);
+    color: var(--color-icon);
+}
+.footer__wrapper-resource-item {
+    @include textStyle($lineHeight:35px);
+    color: var(--color-icon);
+}
+.footer-wrap{
+    width: 280px;
+}
+.footer__wrapper-form-text{
+    @include textStyle($fontSize:20px, $fontWeight:500, $lineHeight:30px);
+    color: var(--color-icon);
+    margin-bottom: 30px;
+}
+.form-label{
+    @include display();
+    padding-left: 15px;
+    width: 325px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    background-color: #FFF;
+}
+.form-input{
+    display: inline-block;
+    border: none;
+    @include textStyle($color:#BCD0E5);
+}
+.footer__wrapper-button {
+    margin-top: 21px;
+    @include button($width:131px);
+    &:hover{
+        @include button($width:131px, $colorBg:#FFF);
+        border: 1px solid #BCD0E5;
+    }
+    &:hover > .footer__wrapper-button-link{
+        color: #02897A;
+    }
+}
+.footer__wrapper-button-link {
+    @include textStyle($fontWeight:700, $lineHeight:normal, $color:#FFF);
+    text-align: center;
+}
+.footer-end {
+    margin-top: 16px;
+    margin-bottom: 46px;
+    @include display($space:center);
+}
+.footer-end-text {
+    @include textStyle($lineHeight:30px);
+    color: var(--color-icon);
+    text-align: center;
+}
+@media (max-width:900px){
+    .footer__wrapper{
+        @include display($items:center, $space:center, $direction:column);
+        gap: 32px;
+    }
+    .footer__wrapper-content {
+        @include display($direction:column,$space:center,$items:center);
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+    .footer__wrapper-resource-list {
+        @include display($direction:column,$space:center,$items:center);
+        gap: 10px;
+    }
+    .form{
+        @include display($space:center, $items:center, $direction:column)
+    }
+    .footer__wrapper-form-text{
+        text-align: center;
+    }
+    .footer__wrapper-button{
+        margin-bottom: 44px;
+    }
+}
+@media (max-width:365px){
+    .form-label{
+        width: 80%;
+    }
+}

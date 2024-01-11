@@ -6,18 +6,22 @@
 }
 .collaborative__wrapper-item{
     @include textStyle($fontWeight:600, $lineHeight:normal);
+    color: var(--color-icon);
     margin-bottom: 8px;
 }
 .collaborative__wrapper-title{
     @include textStyle($fontSize:32px, $fontWeight:700, $lineHeight:normal);
+    color: var(--color-icon);
     margin-bottom: 23px;
 }
 .collaborative__wrapper-text{
     @include textStyle($lineHeight:26px);
+    color: var(--color-icon);
     margin-bottom: 25px;
 }
 .collaborative__wrapper-text-item{
     @include textStyle($fontWeight:600, $lineHeight:26px);
+    color: var(--color-icon);
     margin-bottom: 12px;
 }
 .collaborative-img{

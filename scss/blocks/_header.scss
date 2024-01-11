@@ -1,23 +1,37 @@
 :root{
     --bg-header:white;
-    --color-icon:black;
+    --color-icon:#173A56;
     --navbar-color:#837D88;
     --modal-bg:#2C2830;
-}
+    --menu-bg:white;
+ }
 
 .mode{
-    --bg-header:black;
+    --bg-header:#1F2E35;
     --color-icon:white;
     --navbar-color:white;
     --modal-bg:#e4e1ea;
+    --menu-bg:#F3F3F3;
 }
 
 .site-header{
-    background-color:var(--bg-header) ;
     padding: 19px;
+}
+.header__logo-link{
+    color: var(--color-icon);
+}
+.header__contact-icon-button{
+    border: none;
+    background-color: var(--menu-bg);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
 }
 .header{
     @include display()
+}
+.header__logo-img:hover{
+    opacity: 0.8;
 }
 .header__navbar{
     @include display($space:start);
@@ -27,9 +41,6 @@
     @include display();
     gap: 24px;
 }
-.header__logo-link{
-    color: var(--color-icon);
-}
 .navbar__list{
     @include display($space:start);
     gap: 20px;
@@ -38,7 +49,8 @@
     @include textStyle();
     color: var(--color-icon);
     &:hover{
-        @include textStyle($fontWeight:600)
+        @include textStyle($fontWeight:600);
+        color: var(--color-icon);
     }
 }
 .view-plans{
@@ -52,10 +64,19 @@
 .contact__sign-in{
    @include button($width:102px,$colorBg:transparent);
    border: 1px solid #BCD0E5;
-   color: #173A56;
+   color: var(--color-icon);
+   &:hover{
+    @include button($width:102px);
+    color: #FFF;
+   }
 }
 .contact__sign-up{
     @include button();
+    &:hover{
+        @include button($colorBg:transparent);
+        border: 1px solid #BCD0E5;
+        color: #02897A;
+    }
 }
 .header__contact-icon{
     border: none;
@@ -69,6 +90,7 @@
     display: none;
     border: none;
     background-color: transparent;
+    color: var(--modal-bg);
 }
 .header-element{
     @include display($space:start);

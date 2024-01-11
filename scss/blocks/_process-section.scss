@@ -12,6 +12,7 @@
 }
 .process__wrapper-title{
     @include textStyle($fontSize:32px, $fontWeight:700, $lineHeight:normal);
+    color: var(--color-icon);
     text-align: center;
     margin-bottom: 16px;
 }
@@ -22,6 +23,7 @@
 }
 .process__wrapper-text{
     @include textStyle($fontWeight:500, $lineHeight:26px);
+    color: var(--color-icon);
     text-align: center;
 }
 .process__wrap{
@@ -35,7 +37,9 @@
     gap: 16px;
 }
 .process__content-box-text{
-    @include textStyle($fontWeight:500, $lineHeight:normal, $color:#2F281E)
+    @include textStyle($fontWeight:500, $lineHeight:normal, $color:#2F281E);
+    color: var(--color-icon);
+    color: #2F281E;
 }
 .process__button-link{
     @include display($space:center,$items:center)
@@ -44,6 +48,11 @@
     display: inline-block;
     @include button($width:216px);
     margin-top:48px;
+    &:hover{
+        @include button($width:216px, $colorBg:transparent);
+        border: 1px solid #BCD0E5;
+        color: #02897A;
+    }
 }
 @media (max-width:747px){
     .process-section{

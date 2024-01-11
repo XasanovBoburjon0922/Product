@@ -21,10 +21,12 @@
     margin-bottom: 45px;
 }
 .hero__wrapper-title{
-    @include textStyle($fontSize:40px, $fontWeight:700, $lineHeight:60px)
+    @include textStyle($fontSize:40px, $fontWeight:700, $lineHeight:60px);
+    color: var(--color-icon);
 }
 .hero__wrapper-text{
-    @include textStyle($fontSize:18px)
+    @include textStyle($fontSize:18px);
+    color: var(--color-icon);
 }
 .hero__wrapper-button-content{
     @include display($space:start);
@@ -33,6 +35,11 @@
 .hero__wrapper-button{
     @include button($width:175px);
     font-weight: 700;
+    &:hover{
+        @include button($width:175px, $colorBg:transparent);
+        color: #02897A;
+        border: 1px solid #BCD0E5;
+    }
 }
 .hero__wrapper-content{
     cursor: pointer;
@@ -41,7 +48,9 @@
 }
 .hero__wrapper-content-text{
     @include textStyle($fontWeight:600, $lineHeight:normal, $color:#02897A);
-    text-decoration-line: underline;
+    &:hover{
+        text-decoration-line: underline;
+    }
 }
 .hero-img{
     max-width:600px;
@@ -49,7 +58,8 @@
 }
 @media (max-width:1040px){
     .hero__wrapper-title{
-        @include textStyle($fontSize:38px, $fontWeight:700, $lineHeight:60px)
+        @include textStyle($fontSize:38px, $fontWeight:700, $lineHeight:60px);
+        color: var(--color-icon);
     }
 }
 @media (max-width:1024px){
@@ -77,10 +87,16 @@
 }
 @media (max-width:580px){
     .hero__wrapper-title{
-        @include textStyle($fontSize:36px, $fontWeight:700, $lineHeight:60px)
+        @include textStyle($fontSize:36px, $fontWeight:700, $lineHeight:60px);
+        color: var(--color-icon);
+        text-align: center;
+    }
+    .hero__wrapper-text{
+        text-align: center;
     }
     .hero__wrapper-button{
         @include button($width:142px);
+        text-align: center;
     }
     .header__logo-img{
         width: 170px;

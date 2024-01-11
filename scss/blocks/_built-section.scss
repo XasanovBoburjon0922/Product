@@ -1,6 +1,6 @@
 
 .built-section{
-    background-image: url("../../images/built-bg.png");
+    background-image: url("../../images/built-bg.svg");
     background-repeat: no-repeat;
     background-size: 1600px 563px;
     background-position: calc(50% + 50px) calc(50% - 10px);
@@ -12,6 +12,7 @@
     max-width: 569px;
     @include display($space:center,$items:center);
     @include textStyle($fontSize:32px, $fontWeight:700, $lineHeight:normal);
+    color: var(--color-icon);
     text-align: center;
     margin-bottom: 66px;
 }
@@ -21,13 +22,22 @@
 .built__content-list{
     max-width: 240px;
 }
+.built__content-box{
+    cursor: pointer;
+    @include display($space:start, $items:start, $direction:column);
+    &:hover{
+        background-color: #02897A;
+    }
+}
 .built__content-item-text{
     margin-top: 30px;
     margin-bottom: 13px;
-    @include textStyle($fontSize:22px, $fontWeight:600, $lineHeight:normal)
+    @include textStyle($fontSize:22px, $fontWeight:600, $lineHeight:normal);
+    color: var(--color-icon);
 }
 .built__content-item{
-    @include textStyle($lineHeight:26px)
+    @include textStyle($lineHeight:26px);
+    color: var(--color-icon);
 }
 .built__button-link{
     @include display($space:center,$items:center)
@@ -37,10 +47,15 @@
     @include button($width:175px);
     margin-top:60px;
     margin-bottom: 90px;
+    &:hover{
+        @include button($width:175px,$colorBg:transparent);
+        border: 1px solid #BCD0E5;
+        color:#02897A;
+    }
 }
 @media (max-width:900px){
     .built-section{
-        background-image: url("../../images/built-bg.png");
+        background-image: url("../../images/built-bg.svg");
         background-repeat: no-repeat;
         background-size: 800px 400px;
         background-position: calc(50% + 30px) calc(50% + 400px);
