@@ -4,6 +4,7 @@
     --navbar-color:#837D88;
     --modal-bg:#2C2830;
     --menu-bg:white;
+    // --color-text:#173A56;
  }
 
 .mode{
@@ -12,6 +13,35 @@
     --navbar-color:white;
     --modal-bg:#e4e1ea;
     --menu-bg:#F3F3F3;
+}
+body{
+    overflow-x: hidden;
+}
+.model{
+    transition: all 0.4s linear;
+    transform: translateX(100%);
+    background-color: var(--modal-bg);
+    color: var(--bg-header);
+    @include display($direction:column, $space:center, $items:center);
+    padding-top: 20px;
+    gap: 10px;
+}
+.show-modal{
+    transform: translateX(0);
+}
+.menu-button{
+    @include display($direction:column, $space:center, $items:center);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.close{
+    display: none;
+}
+.remove-self{
+    display: none;
+}
+.open-close{
+    display: block;
 }
 
 .site-header{
@@ -65,17 +95,19 @@
    @include button($width:102px,$colorBg:transparent);
    border: 1px solid #BCD0E5;
    color: var(--color-icon);
+   background-color: #FFF;
    &:hover{
     @include button($width:102px);
+    border: 1px solid #02897A;
     color: #FFF;
    }
 }
 .contact__sign-up{
     @include button();
     &:hover{
-        @include button($colorBg:transparent);
-        border: 1px solid #BCD0E5;
+        @include button();
         color: #02897A;
+        background-color: #FFF;
     }
 }
 .header__contact-icon{
