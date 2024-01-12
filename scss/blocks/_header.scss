@@ -17,6 +17,7 @@ body{
     overflow-x: hidden;
 }
 .model{
+    margin-top: 70px;
     transition: all 0.4s linear;
     transform: translateX(100%);
     background-color: var(--modal-bg);
@@ -36,17 +37,17 @@ body{
 .close{
     display: none;
 }
-.remove-self{
-    display: none;
-}
 .open-close{
     display: block;
 }
-
+.remove-self{
+    display: none;
+}
 .site-header{
     padding-top: 19px;
     padding-bottom: 19px;
-    // position: fixed;
+    position: fixed;
+    z-index: 3;
     right: 0;
     left: 0;
     top: 0;
@@ -123,12 +124,21 @@ body{
     border: none;
     background: transparent;
 }
+.view-plans{
+    color: var(--color-icon);
+    border-color: var(--color-icon);
+}
 #modeBtn{
     color: var(--color-icon);
     border-color: var(--color-icon);
 }
 .hamburger-btn{
     display: none;
+    border: none;
+    background-color: transparent;
+    color: var(--modal-bg);
+}
+.remove-btn{
     border: none;
     background-color: transparent;
     color: var(--modal-bg);

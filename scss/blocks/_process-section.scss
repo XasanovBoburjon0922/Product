@@ -31,6 +31,7 @@
 }
 .process__content{
     @include display($direction:column);
+    position: relative;
 }
 .process__content-box{
     @include display();
@@ -41,9 +42,35 @@
     color: var(--color-icon);
     color: #2F281E;
     border-radius: 26.5px;
+    position: relative;
+    z-index: 2;
     padding: 15px 25px;
     background: #FFF;
     box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.10);
+}
+.process__content-box::after{
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.10);
+    background-color: #FFF;
+    position: absolute;
+    z-index: 1;
+    left: 144px;
+    bottom: 110px;
+}
+.process__content-box::before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.10);
+    background-color: #FFF;
+    position: absolute;
+    z-index: 1;
+    left: 198px;
+    bottom: 14px;
 }
 .process__button-link{
     @include display($space:center,$items:center)

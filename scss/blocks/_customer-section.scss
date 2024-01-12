@@ -1,12 +1,19 @@
+.customer-section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
 .customer{
     @include display()
 }
-.management__wrapper-content{
+.management__wrapper-box{
     @include display($space:start, $items:start);
     gap: 30px;
 }
 .management__wrapper-box{
     max-width: 367.43px;
+}
+.management-img-icon{
+    margin-top: 10px;
 }
 .customer-img{
     max-width:543px; 

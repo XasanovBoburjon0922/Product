@@ -7,6 +7,7 @@ let elModal = document.querySelector(".model")
 elModeBtn.addEventListener("click", function(){
     elBody.classList.toggle("mode")
 })
+
 elHamburgerBtn.addEventListener("click", function() {
     elModal.classList.toggle("show-modal");
     elHamburgerBtn.classList.toggle("remove-self")

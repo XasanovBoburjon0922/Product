@@ -16,10 +16,21 @@
 .footer__wrapper-resource-title {
     @include textStyle($fontSize:28px, $fontWeight:500, $lineHeight:30px);
     color: var(--color-icon);
+    cursor: pointer;
+    &:hover{
+        color: #02897A;
+    }
 }
 .footer__wrapper-resource-item {
     @include textStyle($lineHeight:35px);
     color: var(--color-icon);
+    cursor: pointer;
+    &:hover{
+        color: #02897A;
+    }
+}
+.footer{
+    @include display($items:start)
 }
 .footer-wrap{
     width: 280px;
@@ -70,8 +81,12 @@
     @include textStyle($lineHeight:30px);
     color: var(--color-icon);
     text-align: center;
+    cursor: pointer;
+    &:hover{
+        color: #02897A;
+    }
 }
-@media (max-width:900px){
+@media (max-width:906px){
     .footer__wrapper{
         @include display($items:center, $space:center, $direction:column);
         gap: 32px;
@@ -95,8 +110,11 @@
         margin-bottom: 44px;
     }
 }
-@media (max-width:365px){
+@media (max-width:877px){
     .form-label{
         width: 80%;
+    }
+    .footer{
+        @include display($items:center, $direction:column, $space:center)
     }
 }
